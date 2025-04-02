@@ -5,46 +5,122 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 /* ... (contenu existant) ... */\
+\f0\fs24 \cf0 /* Variables de couleur */\
+:root \{\
+    --rose-principal: #ff9bb3;\
+    --rose-fonce: #d36f99;\
+    --rose-clair: #ffeef3;\
+    --blanc: #fff;\
+    --texte: #5a3d4a;\
+\}\
 \
-/* Nouveaux styles pour le formulaire RDV */\
-.rdv-form \{\
-    max-width: 500px;\
-    margin: 0 auto;\
+/* Reset et polices */\
+body \{\
+    margin: 0;\
+    font-family: 'Playfair Display', serif;\
+    color: var(--texte);\
+    background-color: var(--blanc);\
+\}\
+\
+/* Header \'e9l\'e9gant */\
+.elegant-header \{\
     display: flex;\
-    flex-direction: column;\
-    gap: 15px;\
+    justify-content: space-between;\
+    align-items: center;\
+    padding: 15px 5%;\
+    background-color: var(--blanc);\
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);\
 \}\
 \
-.rdv-form input, \
-.rdv-form select \{\
-    padding: 12px;\
-    border: 2px solid #d36f99;\
-    border-radius: 25px;\
-    font-family: 'Segoe UI', sans-serif;\
+.logo-container \{\
+    display: flex;\
+    align-items: center;\
+    gap: 10px;\
 \}\
 \
-/* Styles pour le tableau des services */\
-.price-table \{\
-    width: 80%;\
-    margin: 30px auto;\
-    border-collapse: collapse;\
-    background-color: white;\
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);\
+.petit-logo \{\
+    height: 40px;\
+    width: auto;\
 \}\
 \
-.price-table th, \
-.price-table td \{\
-    padding: 15px;\
-    text-align: left;\
-    border-bottom: 1px solid #fce4ec;\
+.logo-text \{\
+    font-family: 'Dancing Script', cursive;\
+    font-size: 1.5rem;\
+    color: var(--rose-fonce);\
 \}\
 \
-.price-table th \{\
-    background-color: #d36f99;\
-    color: white;\
+.nav-elegant a \{\
+    margin: 0 15px;\
+    text-decoration: none;\
+    color: var(--texte);\
+    font-weight: 500;\
+    transition: color 0.3s;\
 \}\
 \
-.price-table tr:hover \{\
-    background-color: #ffeef3;\
+.nav-elegant a:hover \{\
+    color: var(--rose-fonce);\
+\}\
+\
+.nav-elegant i \{\
+    margin-right: 5px;\
+\}\
+\
+/* Hero section */\
+.hero-rose \{\
+    text-align: center;\
+    padding: 100px 20px;\
+    background: linear-gradient(135deg, var(--rose-clair), var(--blanc));\
+\}\
+\
+.hero-rose h1 \{\
+    font-size: 3rem;\
+    color: var(--rose-fonce);\
+    margin-bottom: 20px;\
+\}\
+\
+.cta-elegant \{\
+    display: inline-block;\
+    padding: 12px 30px;\
+    background-color: var(--rose-fonce);\
+    color: var(--blanc);\
+    border-radius: 30px;\
+    text-decoration: none;\
+    font-weight: bold;\
+    transition: transform 0.3s;\
+\}\
+\
+.cta-elegant:hover \{\
+    transform: translateY(-3px);\
+\}\
+\
+/* Section services */\
+.preview-services \{\
+    padding: 50px 5%;\
+    text-align: center;\
+\}\
+\
+.service-grid \{\
+    display: flex;\
+    justify-content: center;\
+    gap: 30px;\
+    margin-top: 30px;\
+\}\
+\
+.service-card \{\
+    background: var(--blanc);\
+    border-radius: 15px;\
+    padding: 25px;\
+    width: 200px;\
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);\
+    transition: transform 0.3s;\
+\}\
+\
+.service-card:hover \{\
+    transform: translateY(-10px);\
+\}\
+\
+.service-card i \{\
+    font-size: 2rem;\
+    color: var(--rose-principal);\
+    margin-bottom: 15px;\
 \}}

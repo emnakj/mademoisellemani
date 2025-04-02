@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f8;
+    color: #4d4d4d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fce4ec;
+}
+
+.logo {
+    height: 60px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #b48eae;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ffeef3;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #d36f99;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #d36f99;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
